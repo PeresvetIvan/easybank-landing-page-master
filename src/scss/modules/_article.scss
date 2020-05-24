@@ -1,74 +1,69 @@
 .article {
-    $img-height: 240px;
-    position: relative;
-    z-index: 1;
-    text-align: left;
-    padding: 1.5rem;
-    padding-top: $img-height;
-    height: $img-height * 2;
-    border-radius: 6px;
-    background-color: #fff;
-    overflow: hidden;
+  $img-height: 240px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding: 1.5rem;
+  padding-top: $img-height;
+  height: $img-height * 2;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__author {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  &__title {
+    line-height: 1.2;
+    padding-bottom: 0.3rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $LimeGreen;
+    }
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $img-height;
+    background: url("/images/image-currency.jpg") no-repeat center / cover;
+  }
+
+  &:nth-child(3):after {
+    background: url("/images/image-restaurant.jpg") no-repeat center / cover;
+  }
+  &:nth-child(4):after {
+    background: url("/images/image-plane.jpg") no-repeat center / cover;
+  }
+  &:nth-child(5):after {
+    background: url("/images/image-confetti.jpg") no-repeat center / cover;
+  }
+
+  @include tabletMedia {
+    flex: 1;
+    flex-basis: calc(50% - 1rem);
 
     &:not(:last-child) {
-        margin-bottom: 2rem;
+      margin-bottom: 0;
     }
-    
+  }
 
-    &__author {
-        margin: 1.5rem 0 0.5rem;
-        font-size: 0.7rem;
-    }
-
-    &__title {
-        line-height: 1.2;
-        padding-bottom: 0.3rem;
-        transition: color 0.2s ease;
-
-        &:hover {
-            color: $LimeGreen;
-        }
-    }
-
-    &__text {
-        font-size: 0.9rem;
-        line-height: 1.3;
-    }
-
-
-
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: $img-height;
-        background: url('../src/images/image-currency.jpg') no-repeat center / cover;
-    }
-
-    &:nth-child(3):after {
-        background: url('../src/images/image-restaurant.jpg') no-repeat center / cover;
-    }
-    &:nth-child(4):after {
-        background: url('../src/images/image-plane.jpg') no-repeat center / cover;
-    }
-    &:nth-child(5):after {
-        background: url('../src/images/image-confetti.jpg') no-repeat center / cover;
-    }
-
-    @include tabletMedia {
-
-        flex: 1;
-        flex-basis: calc(50% - 1rem);
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-
-    @media screen and (min-width: 1100px) {
-        flex-basis: calc(25% - 1rem);
-
-    }
+  @media screen and (min-width: 1100px) {
+    flex-basis: calc(25% - 1rem);
+  }
 }

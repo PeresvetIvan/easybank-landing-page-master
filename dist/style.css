@@ -288,25 +288,25 @@ input, button, textarea {
 }
 
 .article:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 240px;
-  background: url("../src/images/image-currency.jpg") no-repeat center/cover;
+  background: url("/images/image-currency.jpg") no-repeat center/cover;
 }
 
 .article:nth-child(3):after {
-  background: url("../src/images/image-restaurant.jpg") no-repeat center/cover;
+  background: url("/images/image-restaurant.jpg") no-repeat center/cover;
 }
 
 .article:nth-child(4):after {
-  background: url("../src/images/image-plane.jpg") no-repeat center/cover;
+  background: url("/images/image-plane.jpg") no-repeat center/cover;
 }
 
 .article:nth-child(5):after {
-  background: url("../src/images/image-confetti.jpg") no-repeat center/cover;
+  background: url("/images/image-confetti.jpg") no-repeat center/cover;
 }
 
 @media screen and (min-width: 775px) {
@@ -590,7 +590,7 @@ input, button, textarea {
 
 .header__img {
   height: 360px;
-  background: url("../../src/images/bg-intro-mobile.svg") no-repeat center/cover;
+  background: url("/images/bg-intro-mobile.svg") no-repeat center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -598,13 +598,13 @@ input, button, textarea {
 }
 
 .header__img:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: inherit;
   height: inherit;
-  background: url("../../src/images/image-mockups.png ") no-repeat bottom/cover;
+  background: url("/images/image-mockups.png ") no-repeat bottom/cover;
   z-index: 1;
 }
 
@@ -630,7 +630,7 @@ input, button, textarea {
     top: 0;
     width: 50%;
     height: 100%;
-    background: url("../../src/images/bg-intro-desktop.svg") no-repeat 10% 40%/200%;
+    background: url("/images/bg-intro-desktop.svg") no-repeat 10% 40%/200%;
   }
   .header__img:after {
     height: 120%;
@@ -653,7 +653,7 @@ input, button, textarea {
     top: 0;
     width: 50%;
     height: 100%;
-    background: url("../../src/images/bg-intro-desktop.svg") no-repeat 15% 40%/150%;
+    background: url("/images/bg-intro-desktop.svg") no-repeat 15% 40%/150%;
   }
   .header__img:after {
     height: 120%;
