@@ -1,0 +1,29 @@
+.features {
+    text-align: center;
+
+    
+
+    &__description {
+        padding-bottom: 3rem;
+    }
+
+    &__title {
+        padding-bottom: 1rem;
+    }
+
+    @include tabletMedia {
+
+        // margin: -0.5rem;
+
+        &__description {
+            // flex: 1 1;
+            width: 100%;
+            text-align: left;
+        }
+
+        &__text {
+            width: 50%;
+        }
+    }
+
+}

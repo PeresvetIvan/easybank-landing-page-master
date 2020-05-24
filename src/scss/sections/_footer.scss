@@ -1,0 +1,67 @@
+.footer {
+    
+    color: #fff;
+
+    &__logo {
+        margin-top: 2rem;
+    }
+
+    &__copyright {
+        font-size: 0.9rem;
+        color: $GrayishBlue;
+        padding-bottom: 2rem;
+    }
+
+    &__menu {
+        flex: 0.6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    @include tabletMedia {
+
+
+
+        &__logo {
+            margin: 0;
+            width: 35%;
+        }
+
+        &__copyright {
+            padding: 0;
+            grid-column: 3 / -1;
+            grid-row: 2 / 3;
+            text-align: right;
+        }
+
+        &__social {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__menu {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        &__btn {
+
+            &-wrap {
+
+                grid-column: 3 / -1;
+                grid-row: 1 / 2;
+                text-align: right;
+            }
+
+            padding: 1rem 2rem;
+            display: inline-block;
+            width: max-content;
+        }
+    }
+}

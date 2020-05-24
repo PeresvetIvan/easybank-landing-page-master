@@ -1,0 +1,18 @@
+.articles {
+    
+    background-color: $VeryLightGray;
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    @include tabletMedia {
+
+        &__title {
+            flex-basis: 100%;
+        }
+    }
+}

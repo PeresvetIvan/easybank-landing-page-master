@@ -1,0 +1,27 @@
+.social {
+
+    &__icon {
+        cursor: pointer;
+        transition: all 0.2 ease;
+
+        &:hover  {
+
+            
+            filter: invert(64%) sepia(48%) saturate(693%) hue-rotate(83deg) brightness(159%) contrast(86%);
+
+        }
+    }
+
+    &__icon:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    @include tabletMedia {
+
+        &__icon:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    
+}

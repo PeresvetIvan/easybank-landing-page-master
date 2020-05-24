@@ -1,0 +1,28 @@
+// resolution
+$Mobile: 375px;
+$Tablet: 775px;
+$Desktop: 1440px;
+
+// colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: #31d35c;
+$BrightCyan: hsl(192, 70%, 51%);
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+$PxContainer: 2rem;
+$BtnGradient: linear-gradient(45deg, $LimeGreen, $BrightCyan);
+
+// mixins
+@mixin tabletMedia {
+    @media screen and (min-width: $Tablet) {
+        @content;
+    }
+}
+
+@mixin desktopMedia {
+    @media screen and (min-width: $Desktop) {
+        @content;
+    }
+}

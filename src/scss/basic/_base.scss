@@ -1,0 +1,35 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    // max-height: 100%;
+}
+
+input, button, textarea {
+    font-size: inherit;
+}

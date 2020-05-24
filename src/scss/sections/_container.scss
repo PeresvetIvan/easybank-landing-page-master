@@ -1,0 +1,147 @@
+.container {
+  // background color container
+
+  &-bg {
+    &--nav {
+      background-color: #fff;
+    }
+
+    &--header {
+      background-color: $VeryLightGray;
+    }
+
+    &--features {
+      background-color: $LightGrayishBlue;
+    }
+
+    &--articles {
+      background-color: $VeryLightGray;
+    }
+
+    &--footer {
+      background-color: $DarkBlue;
+    }
+  }
+
+  // layout container
+
+  &-layout {
+    max-width: $Desktop;
+    padding: 0 $PxContainer;
+    margin: 0 auto;
+
+    &--nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      position: sticky;
+
+    }
+
+    &--header {
+      padding-top: 400px;
+      padding-bottom: 6rem;
+    }
+
+    &--main {
+      padding-bottom: 0;
+    }
+
+    &--features {
+      padding-top: 4rem;
+    }
+
+    &--articles {
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
+
+    &--footer {
+
+    }
+  }
+
+  // content container
+
+  &-content {
+    &--nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;     
+
+    }
+
+    &--header {
+
+    }
+
+    &--features {
+      
+    }
+
+    &--articles {
+      position: relative;
+    }
+
+    &--footer {
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @include tabletMedia {
+
+    &-layout {
+
+        &--nav {
+            padding-top: 0;
+            padding-bottom: 0;
+            position: relative;
+        }
+
+        &--header {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+        &--footer {
+          padding: 3rem 2rem;
+        }
+
+    }
+
+    &-content {
+
+        &--header {
+            width: 50%;
+        }
+
+        &--features {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+
+        &--articles {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+
+        &--footer {
+          height: unset;
+          display: grid;
+          grid-template-columns: 2fr 2.5fr 2fr;
+          gap: 1rem;
+        }
+    }
+
+    
+  }
+
+  
+}
